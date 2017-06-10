@@ -42,7 +42,7 @@ beautiful.init("/usr/share/awesome/themes/blackarch/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xfce4-terminal"
-editor = os.getenv("EDITOR") or "nano"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -105,11 +105,11 @@ xfce4-terminalmenu = {
 
 browsermenu = {
     { "firefox", "firefox" },
-    { "midori", "midori" }
+--    { "midori", "midori" }
 }
 
 networkmenu = {
-    { "wicd-curses", "wicd-curses" },
+    { "Network Manager", "nm-applett" },
     { "wicd-gtk", "wicd-gtk" }
 }
 
