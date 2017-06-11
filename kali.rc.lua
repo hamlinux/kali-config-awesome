@@ -45,7 +45,7 @@ beautiful.init(awful.util.get_themes_dir() .. "zenburn/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"
-editor = os.getenv("EDITOR") or "editor"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -101,61 +101,33 @@ myawesomemenu = {
    { "quit", function() awesome.quit() end}
 }
 
+terminalmenu = {
+    { "xfce4-terminal (red)", "xfce4-terminal -bg black -fg red" },
+    { "xfce4-terminal (green)", "xfce4-terminal -bg black -fg green" },
+    { "xfce4-terminal (yellow)", "xfce4-terminal -bg black -fg yellow" },
+    { "xfce4-terminal (white)", "xfce4-terminal -bg black -fg white" }
+}
+
+browsermenu = {
+    { "firefox", "firefox" },
+--    { "midori", "midori" }
+}
+
+networkmenu = {
+    { "Network Manager", "nm-applett" },
+--    { "wicd-gtk", "wicd-gtk" }
+}
+
 kalimenu = {
-  { "anti-forensic", antiforensicmenu },
-  { "automation", automationmenu },
-  { "automobile", automobilemenu },
-  { "backdoor", backdoormenu },
-  { "binary", binarymenu },
-  { "bluetooth", bluetoothmenu },
-  { "code-audit", codeauditmenu },
-  { "cracker", crackermenu },
-  { "crypto", cryptomenu },
-  { "cryptography", cryptographymenu },
-  { "database", databasemenu },
-  { "debugger", debuggermenu },
-  { "debuggger", debugggermenu },
-  { "decompiler", decompilermenu },
-  { "defensive", defensivemenu },
-  { "disassembler", disassemblermenu },
-  { "dos", dosmenu },
-  { "drone", dronemenu },
-  { "exploitation", exploitationmenu },
-  { "fingerprint", fingerprintmenu },
-  { "firmware", firmwaremenu },
-  { "forensic", forensicmenu },
-  { "fuzzer", fuzzermenu },
-  { "hardware", hardwaremenu },
-  { "honeypot", honeypotmenu },
-  { "ids", idsmenu },
-  { "keylogger", keyloggermenu },
-  { "malware", malwaremenu },
-  { "misc", miscmenu },
-  { "mobile", mobilemenu },
-  { "networking", networkingmenu },
-  { "exploitation", exploitationmenu },
-  { "nfc", nfcmenu },
-  { "packer", packermenu },
-  { "proxy", proxymenu },
-  { "radio", radiomenu },
-  { "recon", reconmenu },
-  { "reversing", reversingmenu },
-  { "scanner", scannermenu },
-  { "sniffer", sniffermenu },
-  { "social", socialmenu },
-  { "spoof", spoofmenu },
-  { "stego", stegomenu },
-  { "tunnel", tunnelmenu },
-  { "unpacker", unpackermenu },
-  { "voip", voipmenu },
-  { "webapp", webappmenu },
-  { "windows", windowsmenu },
-  { "binary", binarymenu },
-  { "wireless", wirelessmenu },
+  { "Info Gather", infogathermenu },
+  { "Vuln Analysis", vulnanalmenu },
+  { "Web App Analysis", webappanalmenu },
+  { "PW Attack", pwattackmenu },
+  { "DB Assess", dbassessmenu },
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-		                            { "terminals", terminal },
+		                            { "terminals", terminalmenu },
 		                            { "browsers", browsermenu },
 		                            { "network", networkmenu },
 		                            { "Kali", kalimenu },
