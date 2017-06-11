@@ -133,6 +133,14 @@ vulnanalmenu = {
 toptenmenu = {
   { "Aircrack-NG", "xterm -e 'aircrack-ng' ; bash" },
   { "Burp Suite", "xfce4-terminal 'burpsuite' ; bash" },
+  { "hydra", "xfce4-terminal 'hydra -h' ; -H" },
+  { "john", "xfce4-terminal 'john -h' ; -H" },
+  { "maltego", "maltego" },
+  { "metasploit-frameworki", "xfce4-terminal 'hydra -h' ; -H" },
+  { "nmap", "xfce4-terminal 'nmap -h' ; -H" },
+  { "zaproxy", "xfce4-terminal 'zaproxy -h' ; -H" },
+  { "sqlmap", "xfce4-terminal 'sqlmap -h' ; -H" },
+  { "wireshark", "wireshark" },
 
 }
 
