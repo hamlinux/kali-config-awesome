@@ -130,7 +130,14 @@ vulnanalmenu = {
 
 }
 
+toptenmenu = {
+  { "Aircrack-NG", "xterm -e 'aircrack-ng' ; bash" },
+  { "Burp Suite", "xfce4-terminal 'burpsuite' ; bash" },
+
+}
+
 kalimenu = {
+  { "Kali Top 10", toptenmenu },
   { "Information Gathering", infogathermenu },
   { "Vulnerability Analysis", vulnanalmenu },
   { "Web Applications ", webappsmenu },
