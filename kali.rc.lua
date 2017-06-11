@@ -118,12 +118,28 @@ networkmenu = {
 --    { "wicd-gtk", "wicd-gtk" }
 }
 
+infogathermenu = {
+  { "Maltego_CE", "maltego-ce" },
+  { "Casefile_CE", "casefile-ce" }
+
+}
+
+vulnanalmenu = {
+  { "Openvas", "openvas-start" },
+  { "Openvas stop", "openvas-stop" }
+
+}
+
 kalimenu = {
-  { "Info Gather", infogathermenu },
-  { "Vuln Analysis", vulnanalmenu },
-  { "Web App Analysis", webappanalmenu },
-  { "PW Attack", pwattackmenu },
-  { "DB Assess", dbassessmenu },
+  { "Information Gathering", infogathermenu },
+  { "Vulnerability Analysis", vulnanalmenu },
+  { "Web Applications ", webappsmenu },
+  { "Password Attacks", pwattackmenu },
+  { "Wireless Attacks", wirelessmenu },
+  { "Expoitation Tools", expolitmenu },
+  { "Sniffing/Spoofing", spoofmenu },
+  { "Maintaining Access", accessmenu },
+  { "Reverse Engineering", remenu },
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
