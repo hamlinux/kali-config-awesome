@@ -158,7 +158,7 @@ kalimenu = {
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-		                            { "terminals", terminalmenu },
+		                            { "terminals", terminal },
 		                            { "browsers", browsermenu },
 		                            { "network", networkmenu },
 		                            { "Kali", kalimenu },
