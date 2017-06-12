@@ -137,7 +137,7 @@ toptenmenu = {
   { "john", "xfce4-terminal 'john -h' ; -H" },
   { "maltego", "maltego" },
   { "metasploit-frameworki", "xfce4-terminal 'hydra -h' ; -H" },
-  { "nmap", "xfce4-terminal 'nmap -h' ; -H" },
+  { "nmap", 'terminal -e nmap' },
   { "zaproxy", "xfce4-terminal 'zaproxy -h' ; -H" },
   { "sqlmap", "xfce4-terminal 'sqlmap -h' ; -H" },
   { "wireshark", "wireshark" },
